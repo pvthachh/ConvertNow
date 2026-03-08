@@ -16,11 +16,11 @@ public class QuantitiesDataProvider {
         addItem(new DataItemQuantities("quantities_length", R.string.string_quantities_list_length, "ic_quantities_length.png", false));
         addItem(new DataItemQuantities("quantities_area", R.string.string_quantities_list_area, "ic_quantities_area.png", false));
 //        addItem(new DataItemQuantities("quantities_weight", R.string.string_quantities_list_weight, "ic_quantities_weight.png", false));
-//        addItem(new DataItemQuantities("quantities_volume", R.string.string_quantities_list_volume, "ic_quantities_volume.png", false));
+        addItem(new DataItemQuantities("quantities_volume", R.string.string_quantities_list_volume, "ic_quantities_volume.png", false));
         addItem(new DataItemQuantities("quantities_temperature", R.string.string_quantities_list_temperature, "ic_quantities_temperature.png", false));
-//        addItem(new DataItemQuantities("quantities_time", R.string.string_quantities_list_time, "ic_quantities_time.png", false));
+        addItem(new DataItemQuantities("quantities_time", R.string.string_quantities_list_time, "ic_quantities_time.png", false));
 //        addItem(new DataItemQuantities("quantities_speed", R.string.string_quantities_list_speed, "ic_quantities_speed.png", false));
-//        addItem(new DataItemQuantities("quantities_digital", R.string.string_quantities_list_digital, "ic_quantities_digital.png", false));
+        addItem(new DataItemQuantities("quantities_digital", R.string.string_quantities_list_digital, "ic_quantities_digital.png", false));
 //        addItem(new DataItemQuantities("quantities_age", R.string.string_quantities_list_age, "ic_quantities_age.png", false));
 //        addItem(new DataItemQuantities("quantities_binary", R.string.string_quantities_list_binary, "ic_quantities_binary.png", false));
 //        addItem(new DataItemQuantities("quantities_angle", R.string.string_quantities_list_angle, "ic_quantities_angle.png", false));

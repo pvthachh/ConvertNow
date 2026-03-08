@@ -1,16 +1,21 @@
 package com.realbarrel.unitconverter.fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SwitchCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Toast;
 
+import com.realbarrel.unitconverter.LanguageActivity;
 import com.realbarrel.unitconverter.R;
 import com.realbarrel.unitconverter.adapters.MoreAdapter;
 import com.realbarrel.unitconverter.dataProviders.MoreAboutDataProvider;
@@ -52,19 +57,19 @@ public class MoreFragment extends Fragment {
     }
 
     private void languageOnClick() {
-//        TextView languageTV = view.findViewById(R.id.tv_more_settings_language);
-//        languageTV.setOnClickListener(v ->
-//                startActivity(new Intent(context, LanguageActivity.class)));
+        TextView languageTV = view.findViewById(R.id.tv_more_settings_language);
+        languageTV.setOnClickListener(v ->
+                startActivity(new Intent(context, LanguageActivity.class)));
     }
 
     private void nightSwitchOnChecked() {
-//        SwitchCompat nightSwitch = view.findViewById(R.id.switch_more_settings_night);
-//        nightSwitch.setOnCheckedChangeListener((buttonView, isChecked) -> {
-//            if (isChecked) {
-//                Toast.makeText(context, "Checked", Toast.LENGTH_SHORT).show();
-//            } else {
-//                Toast.makeText(context, "Unchecked", Toast.LENGTH_SHORT).show();
-//            }
-//        });
+        SwitchCompat nightSwitch = view.findViewById(R.id.switch_more_settings_night);
+        nightSwitch.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked) {
+                Toast.makeText(context, "Checked", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(context, "Unchecked", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

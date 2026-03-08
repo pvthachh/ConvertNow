@@ -61,24 +61,20 @@
     <string name="string_language_title">Language</string>
     <string name="string_language_header">Choose your language</string>
     <string name="string_language_list_english">English</string>
-    <string name="string_language_list_persian">Persian</string>
+    <string name="string_language_list_persian">Tiếng Việt</string>
 
     <!--Disclaimer activity-->
     <string name="string_disclaimer_title">Disclaimer</string>
     <string name="string_disclaimer_header">Privacy Policy</string>
-    <string name="string_disclaimer_text">Unit Converter is a very simple and powerful utility application mainly useful for education and quickly conversion in daily life. We do not ask for or store any sort of private data of the users.\n\n<b>User Contents</b>\n
+    <string name="string_disclaimer_text">ConvertNow is a very simple and powerful utility application mainly useful for education and quickly conversion in daily life. We do not ask for or store any sort of private data of the users.\n\n<b>User Contents</b>\n
         We do not store, supervise and do not claim ownership on any contents created by the application users. You acknowledge that clearing application data or uninstalling this application from your device or losing your device or device problem could result in loss of all data. You are responsible for backing up your data.\n\n<b>Usage Policy</b>\n
-        All our android applications are licensed with Google Play. You may use this application solely for your personal use and must not modify, reproduce or distribute the software in any way or use it for any commercial purpose. Always download our application from official Google play store App or website to avail the latest updated and secure version of the Application in your device. By using our applications you agree to our Apps usage policy.\n\n<b>Ads Policy</b>\n
-        Apps published by Real Barrel are integrated with Google Ads. We do not personally endorse the products/services that are listed under ads by Google while using our applications. We allow Google ads in our apps for the purpose of managing our business continuity, marketing cost and paying the developers. By using our Application published by Real Barrel, You fully agree to our ads policy.\n\n<b>Liability</b>\n
-        We have gone to great lengths to ensure that all information in our applications and the promoting materials relating to it, is correct. However, we cannot be held responsible for potential errors and misinformation that our applications may still contain, nor for any potential damages or losses arising from relying on or applying the information from our applications.\n\n<b>Consent</b>\n
-        By using our applications, you consent to all of our privacy policies.\n\n<b>Changes to our Privacy policy</b>\n
-        If we decide to change our privacy policy, we will update those changes on this page.\nThe Policy was last modified on <b>December 22nd 2018</b>.\n\n<b>Contact us</b>\n
-        If there are any questions regarding the privacy policy you may contact us using the information below.\n\nEmail: <b>william.gates.3299@gmail.com</b></string>
+        All our android applications are licensed with Google Play. You may use this application solely for your personal use and must not modify, reproduce or distribute the software in any way or use it for any commercial purpose. Always download our application from official Google play store App or website to avail the latest updated and secure version of the Application in your device. By using our applications you agree to our Apps usage policy.\n\n
+        If there are any questions regarding the privacy policy you may contact us using the information below.\n\nEmail: <b>PrincessSilva807452@gmail.com</b></string>
 
     <!--Converter activity-->
     <string name="string_converter_title_from">From:</string>
     <string name="string_converter_title_to">To:</string>
-    <string name="string_converter_text_share">"Download the Real Barrel's Unit Converter app from here:\n\n"</string>
+    <string name="string_converter_text_share">"Download the Real Barrel's ConvertNow app from here:\n\n"</string>
     <string name="string_converter_title_share">Share via…</string>
 
     <!--Favorites activity-->

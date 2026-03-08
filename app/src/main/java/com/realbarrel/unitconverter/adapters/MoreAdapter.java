@@ -27,9 +27,9 @@ public class MoreAdapter extends RecyclerView.Adapter<MoreAdapter.ViewHolder> {
     private final List<DataItemMore> mItems;
     private final Context mContext;
 
-    private static final String URL_TWITTER = "https://twitter.com/WilliamGates99/";
-    private static final String URL_INSTAGRAM = "https://www.instagram.com/WilliamGates99/";
-    private static final String URL_TELEGRAM = "https://t.me/WilliamGates99/";
+    private static final String URL_TWITTER = "https://twitter.com/";
+    private static final String URL_INSTAGRAM = "https://www.instagram.com/";
+    private static final String URL_TELEGRAM = "https://t.me/";
     public static String URL_STORE;
 
     public MoreAdapter(Context context, List<DataItemMore> items) {
@@ -60,36 +60,10 @@ public class MoreAdapter extends RecyclerView.Adapter<MoreAdapter.ViewHolder> {
                     Snackbar.make(holder.mView, "Donated", Snackbar.LENGTH_SHORT).show();
                     break;
                 case "support_rate":
-                    Intent supportRate = new Intent(Intent.ACTION_VIEW, Uri.parse(URL_STORE));
-                    mContext.startActivity(Intent.createChooser(supportRate,
-                            mContext.getString(R.string.string_more_title_support_open)));
                     break;
                 case "support_feedback":
-                    String EMAIL = "william.gates.3299@gmail.com";
-                    String[] emailAddress = {EMAIL};
-                    Intent supportFeedback = new Intent(Intent.ACTION_SENDTO);
-                    supportFeedback.setData(Uri.parse("mailto:"));
-                    supportFeedback.putExtra(Intent.EXTRA_EMAIL, emailAddress);
-                    supportFeedback.putExtra(Intent.EXTRA_SUBJECT,
-                            mContext.getString(R.string.app_name));
-                    supportFeedback.putExtra(Intent.EXTRA_TEXT,
-                            MainActivity.DEVICE_INFORMATION + "\nApp Version: " +
-                                    MainActivity.APP_VERSION +
-                                    "\n--------------------------------------\nFeedback:");
-                    mContext.startActivity(Intent.createChooser(supportFeedback,
-                            mContext.getString(R.string.string_more_title_support_feedback)));
                     break;
                 case "support_invite":
-                    Intent supportInvite = new Intent(Intent.ACTION_SEND);
-                    supportInvite.setType("text/plain");
-                    supportInvite.putExtra(Intent.EXTRA_SUBJECT,
-                            mContext.getString(R.string.app_name));
-                    String inviteString =
-                            mContext.getString(R.string.string_more_text_support_invite) +
-                                    URL_STORE;
-                    supportInvite.putExtra(Intent.EXTRA_TEXT, inviteString);
-                    mContext.startActivity(Intent.createChooser(supportInvite,
-                            mContext.getString(R.string.string_more_title_support_invite)));
                     break;
                 case "about_disclaimer":
                     mContext.startActivity(new Intent(mContext, DisclaimerActivity.class));

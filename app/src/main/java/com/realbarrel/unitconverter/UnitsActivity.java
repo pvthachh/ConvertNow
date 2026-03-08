@@ -8,8 +8,11 @@ import androidx.appcompat.widget.Toolbar;
 import com.realbarrel.unitconverter.adapters.QuantitiesAdapter;
 import com.realbarrel.unitconverter.adapters.UnitsAdapter;
 import com.realbarrel.unitconverter.dataProviders.UnitAreaDataProvider;
+import com.realbarrel.unitconverter.dataProviders.UnitDigitalDataProvider;
 import com.realbarrel.unitconverter.dataProviders.UnitLengthDataProvider;
 import com.realbarrel.unitconverter.dataProviders.UnitTemperatureDataProvider;
+import com.realbarrel.unitconverter.dataProviders.UnitTimeDataProvider;
+import com.realbarrel.unitconverter.dataProviders.UnitVolumeDataProvider;
 import com.realbarrel.unitconverter.dataProviders.UnitWeightDataProvider;
 import com.realbarrel.unitconverter.models.DataItemQuantities;
 import com.realbarrel.unitconverter.models.DataItemUnits;
@@ -71,6 +74,9 @@ public class UnitsActivity extends AppCompatActivity {
                 unitsRV.setAdapter(unitsAdapter);
                 break;
             case "quantities_volume":
+                List<DataItemUnits> dataItemUnitVolumeList = UnitVolumeDataProvider.dataItemUnitsList;
+                unitsAdapter = new UnitsAdapter(this, dataItemUnitVolumeList, itemQuantities);
+                unitsRV.setAdapter(unitsAdapter);
                 break;
             case "quantities_temperature":
                 List<DataItemUnits> dataItemUnitTemperatureList = UnitTemperatureDataProvider.dataItemUnitsList;
@@ -78,10 +84,16 @@ public class UnitsActivity extends AppCompatActivity {
                 unitsRV.setAdapter(unitsAdapter);
                 break;
             case "quantities_time":
+                List<DataItemUnits> dataItemUnitTimeList = UnitTimeDataProvider.dataItemUnitsList;
+                unitsAdapter = new UnitsAdapter(this, dataItemUnitTimeList, itemQuantities);
+                unitsRV.setAdapter(unitsAdapter);
                 break;
             case "quantities_speed":
                 break;
             case "quantities_digital":
+                List<DataItemUnits> dataItemUnitDigitalList = UnitDigitalDataProvider.dataItemUnitsList;
+                unitsAdapter = new UnitsAdapter(this, dataItemUnitDigitalList, itemQuantities);
+                unitsRV.setAdapter(unitsAdapter);
                 break;
             case "quantities_age":
                 break;
