@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Unit Converter</string>
+    <string name="app_name" translatable="false">ConvertNow</string>
 
     <!--Bottom navigation view-->
     <string name="string_main_bnv_quantities">Quantities</string>
@@ -301,5 +301,39 @@
     <string name="string_units_list_temperature_reaumur">Réaumur</string>
     <string name="string_units_list_temperature_romer">Rømer</string>
     <string name="string_units_list_temperature_delisle">Delisle</string>
+
+    <string name="unit_second">Second</string>
+    <string name="unit_minute">Minute</string>
+    <string name="unit_hour">Hour</string>
+    <string name="unit_day">Day</string>
+
+    <string name="unit_milliliter">Milliliter</string>
+    <string name="unit_liter">Liter</string>
+    <string name="unit_cubic_meter">Cubic Meter</string>
+    <string name="unit_gallon">Gallon</string>
+
+    <string name="unit_byte">Byte</string>
+    <string name="unit_kb">KB</string>
+    <string name="unit_mb">MB</string>
+    <string name="unit_gb">GB</string>
+
+    <!-- Digital -->
+    <string name="string_units_list_digital_byte">Byte</string>
+    <string name="string_units_list_digital_kilobyte">Kilobyte</string>
+    <string name="string_units_list_digital_megabyte">Megabyte</string>
+    <string name="string_units_list_digital_gigabyte">Gigabyte</string>
+
+    <!-- Volume -->
+    <string name="string_units_list_volume_milliliter">Milliliter</string>
+    <string name="string_units_list_volume_liter">Liter</string>
+    <string name="string_units_list_volume_cubic_meter">Cubic Meter</string>
+    <string name="string_units_list_volume_gallon">Gallon</string>
+
+    <!-- Time -->
+    <string name="string_units_list_time_second">Second</string>
+    <string name="string_units_list_time_minute">Minute</string>
+    <string name="string_units_list_time_hour">Hour</string>
+    <string name="string_units_list_time_day">Day</string>
+    <string name="string_units_list_time_week">Week</string>
 
 </resources>

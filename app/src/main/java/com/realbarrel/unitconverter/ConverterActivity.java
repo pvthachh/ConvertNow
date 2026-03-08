@@ -11,12 +11,18 @@ import com.realbarrel.unitconverter.adapters.MoreAdapter;
 import com.realbarrel.unitconverter.adapters.QuantitiesAdapter;
 import com.realbarrel.unitconverter.adapters.UnitsAdapter;
 import com.realbarrel.unitconverter.converters.AreaConverter;
+import com.realbarrel.unitconverter.converters.DigitalConverter;
 import com.realbarrel.unitconverter.converters.LengthConverter;
 import com.realbarrel.unitconverter.converters.TemperatureConverter;
+import com.realbarrel.unitconverter.converters.TimeConverter;
+import com.realbarrel.unitconverter.converters.VolumeConverter;
 import com.realbarrel.unitconverter.converters.WeightConverter;
 import com.realbarrel.unitconverter.dataProviders.UnitAreaDataProvider;
+import com.realbarrel.unitconverter.dataProviders.UnitDigitalDataProvider;
 import com.realbarrel.unitconverter.dataProviders.UnitLengthDataProvider;
 import com.realbarrel.unitconverter.dataProviders.UnitTemperatureDataProvider;
+import com.realbarrel.unitconverter.dataProviders.UnitTimeDataProvider;
+import com.realbarrel.unitconverter.dataProviders.UnitVolumeDataProvider;
 import com.realbarrel.unitconverter.dataProviders.UnitWeightDataProvider;
 import com.realbarrel.unitconverter.models.DataItemQuantities;
 import com.realbarrel.unitconverter.models.DataItemUnits;
@@ -133,15 +139,18 @@ public class ConverterActivity extends AppCompatActivity {
                 dataItemUnitsList = UnitWeightDataProvider.dataItemUnitsList;
                 break;
             case "quantities_volume":
+                dataItemUnitsList = UnitVolumeDataProvider.dataItemUnitsList;
                 break;
             case "quantities_temperature":
                 dataItemUnitsList = UnitTemperatureDataProvider.dataItemUnitsList;
                 break;
             case "quantities_time":
+                dataItemUnitsList = UnitTimeDataProvider.dataItemUnitsList;
                 break;
             case "quantities_speed":
                 break;
             case "quantities_digital":
+                dataItemUnitsList = UnitDigitalDataProvider.dataItemUnitsList;
                 break;
             case "quantities_age":
                 break;
@@ -211,6 +220,9 @@ public class ConverterActivity extends AppCompatActivity {
                 weightConverter.convert();
                 break;
             case "quantities_volume":
+                VolumeConverter volumeConverter = new VolumeConverter(this, fromUnit,
+                        toUnit, fromValue, toValue, toNumberTV);
+                volumeConverter.convert();
                 break;
             case "quantities_temperature":
                 TemperatureConverter temperatureConverter = new TemperatureConverter(this, fromUnit,
@@ -218,10 +230,16 @@ public class ConverterActivity extends AppCompatActivity {
                 temperatureConverter.convert();
                 break;
             case "quantities_time":
+                TimeConverter timeConverter = new TimeConverter(this, fromUnit,
+                        toUnit, fromValue, toValue, toNumberTV);
+                timeConverter.convert();
                 break;
             case "quantities_speed":
                 break;
             case "quantities_digital":
+                DigitalConverter digitalConverter = new DigitalConverter(this, fromUnit,
+                        toUnit, fromValue, toValue, toNumberTV);
+                digitalConverter.convert();
                 break;
             case "quantities_age":
                 break;
